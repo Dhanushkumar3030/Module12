@@ -1,29 +1,54 @@
-# 📚 Stack using Linked List: Stack Implementation (Top Element Display)
+# 📚 Stack using Linked List: Check and Print the Index Value of the Elements Stored in the Stack
+
+This Python program demonstrates how to:
+1. Create a stack using a list.
+2. Add elements to the stack.
+3. Print the index and corresponding value of each element in the stack.
 
 ## 🎯 Aim
 
-To write a Python program that implements a **stack**.  
-The program allows inserting 3 elements from the user and then prints the **top element** of the stack.
-
----
+To write a Python program that:
+- Creates a stack using a list.
+- Adds elements to the stack.
+- Prints the index values of the stack elements along with the corresponding values.
 
 ## 🧠 Algorithm
 
-1. **Start the program.**
-2. **Initialize** an empty list called `stack` to simulate the stack.
-3. **Repeat 3 times**:
-   - Prompt the user to **input a value**.
-   - Use `stack.append(value)` to **push** the value onto the stack.
-4. After inserting 3 elements:
-   - Access the **top element** using `stack[-1]`.
-5. **Print** the top element.
-6. **End the program.**
+1. **Create an Empty Stack**:
+   - Initialize an empty list `stack` to store elements.
 
----
+2. **Add Elements to the Stack**:
+   - Append elements (e.g., 'a', 'b', 'c') to the stack using the `append()` method.
 
-## 💻 Program
-Add Code Here
+3. **Print the Initial Stack**:
+   - Print the contents of the stack with a message "Initial stack: ".
 
-## Output
+4. **Iterate through the Stack**:
+   - Use a `for` loop with `range()` to iterate through the stack.
+   - Print the index value and corresponding element at that index.
 
+5. **Print Index and Value**:
+   - For each element in the stack, print the index and the value at that index.
+
+## 📝 Program
+```
+stack = []
+stack.append('a')
+stack.append('b')
+stack.append('c')
+print("Initial stack:", stack)
+print("\nIndex and Values in the stack:")
+for index in range(len(stack)):
+    print(f"Index {index}: {stack[index]}")
+```
+## Sample Input & Output
+```
+Initial stack: ['a', 'b', 'c']
+
+Index and Values in the stack:
+Index 0: a
+Index 1: b
+Index 2: c
+```
 ## Result
+Hence  Checked and Printed the Index Value of the Elements Stored in the Stack.
